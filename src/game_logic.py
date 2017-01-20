@@ -67,7 +67,7 @@ class Game:
             return
         current_time = time()
         session = self.Session()
-        for entity in session.query(Word).filter(current_time - Word.time_of_last_repetition > 1):
+        for entity in session.query(Word).filter(current_time - Word.time_of_last_repetition > 86400000):
             if choosed == '1':
                 answer = input('___________________{word}___________________\n'.format(word=entity.word))
                 if answer == entity.translation:
