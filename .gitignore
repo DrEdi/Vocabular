@@ -6,3 +6,6 @@
 
 # Vagga files
 .vagga
+
+# PyCharm
+*.idea
