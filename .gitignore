@@ -1,0 +1,8 @@
+# Git files
+.git
+
+# Env files
+.python-version
+
+# Vagga files
+.vagga
