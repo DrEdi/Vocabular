@@ -74,15 +74,14 @@ class Game:
                     print('Congratulation!')
                     entity.count_of_true_answers += 1
                 else:
-                    print('Sorry, but it\'s not true.')
+                    print('Sorry, but it\'s not true.\n{info}'.format(info=entity))
             elif choosed == '2':
                 answer = input('___________________{word}___________________\n'.format(word=entity.translation))
                 if answer == entity.word:
                     print('Congratulation!')
                     entity.count_of_true_answers += 1
                 else:
-                    print('Sorry, but it\'s not true.')
-            entity.time_of_last_repetition = time()
+                    print('Sorry, but it\'s not true.\n{info}'.format(info=entity))
             entity.count_of_repetitions += 1
             entity.progress = entity.count_of_true_answers/entity.count_of_repetitions
             session.add(entity)
