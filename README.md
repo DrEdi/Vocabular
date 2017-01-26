@@ -2,5 +2,7 @@
 # App created to help you learn words
 
 If you're using this for the first time first of all you need to create DB.
-Go to src/ foldet and then `run models.py` file. That's all.
-Now you can use app. Just `run main.py` file
+
+> How to use
+First of all create DB, run ***python src/models.py***
+After, you can run you program any time you want ***python main.py***
